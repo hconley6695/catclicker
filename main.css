@@ -1,0 +1,23 @@
+div.container {
+	height: 400px;
+	width: 420px;
+	/*border: 1px solid black;*/
+}
+
+img {
+	width: 400px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.click-number {
+	height: 40px;
+	width: 40px;
+	/*border: 1px solid black;*/
+	display: inline-block;
+	font-size: 24px;
+	margin: auto;
+	text-align: center;
+
+}
