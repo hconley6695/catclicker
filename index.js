@@ -1,6 +1,14 @@
-import $ from 'jquery';
+(function () {
+	var num = 0;
+	
+	document.getElementById('click-img').addEventListener('click', catClick);
 
-$('body').on('click', 'button', function(event){
+	function catClick() {
+		// alert('You clicked a cat.');
+		num++;
+		document.getElementById('click-number').innerHTML = num;
+	}
 
-	alert("You clicked the button");
-} )
+
+
+})();
