@@ -1,10 +1,11 @@
 div.container {
 	height: 400px;
-	width: 420px;
+	width: 900px;
 	/*border: 1px solid black;*/
 }
 button {
 	background-color: gray;
+	margin: 10px;
 }
 
 img {
@@ -14,7 +15,7 @@ img {
 	margin-left: auto;
 }
 
-#click-number {
+#click-number1, #click-number2 {
 	height: 40px;
 	width: 40px;
 	/*border: 1px solid black;*/
@@ -23,4 +24,9 @@ img {
 	margin: auto;
 	text-align: center;
 
+}
+
+.outside-span {
+	margin-right: 40px;
+	margin-left: 40px;
 }
