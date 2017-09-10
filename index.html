@@ -3,18 +3,26 @@
 	<head>
 		<title>Cat Clicker</title>
 		<link rel="stylesheet" href="main.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</head>
 	<body>
 		<div class="container">
 		  <div>
-			<button id="click-img1"><img src="catpic.jpg"></button>
-			<button id="click-img2"><img src="catpic2.jpg"></button>	
-			<br/>		
-			<span class="outside-span">You have clicked the grey striped kitten, <span id="first_cat">Stripey</span>, <span id="click-number1"> 0</span>times!</span>
+			<ul>
 
-			<span class="outside-span">You have clicked the shy cat, <span id="second_cat">Smeigal</span>,<span id="click-number2"> 0</span>times!</span>
-
-
+				<li>
+					<button id="click-img1" class="cat"><img src="catpic.jpg"></button>	
+					<span class="outside-span">You have clicked the grey striped kitten, 
+						<span id="first_cat">Stripey
+						</span>, 
+						<span class="click-number" id="click-number1"> 0</span>
+					times!</span>
+				</li>
+				<li>
+					<button id="click-img2" class="cat"><img src="catpic2.jpg"></button>	
+					<span class="outside-span">You have clicked the shy cat, <span id="second_cat">Smeigal</span>,<span id="click-number2" class="click-number"> 0</span>times!</span>
+				</li>
+			</ul>
 
 		</div>
 	<script type="text/javascript" src="index.js"></script>
