@@ -1,5 +1,7 @@
 // (function () {
-// 	var num_one = 0;
+// 	
+//  FIRST VERSION
+// var num_one = 0;
 // 	var num_two = 0;
 // 	var name_one, name_two;
 
@@ -21,23 +23,25 @@
 
 // })();
 
-jQuery( document ).ready(function() {
-		// var num_one = 0;
-		// var num_two = 0;
-		// var name_one, name_two;
-		var num = 0;
 
-		jQuery('li button.cat').on('click', function() {
 
-			num = $(this).siblings('span.outside-span').children('span.click-number').html();
-			console.log(num);
-			num++;
+//SECOND VERSION 
 
-			$(this).siblings('span.outside-span').children('span.click-number').html(num);
+// jQuery( document ).ready(function() {
+
+		// var num = 0;
+
+		// jQuery('li button.cat').on('click', function() {
+
+		// 	num = $(this).siblings('span.outside-span').children('span.click-number').html();
+		// 	console.log(num);
+		// 	num++;
+
+		// 	$(this).siblings('span.outside-span').children('span.click-number').html(num);
 		
-		});
+		// });
 
 
 
 
-});
+// });

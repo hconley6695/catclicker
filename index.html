@@ -7,24 +7,23 @@
 	</head>
 	<body>
 		<div class="container">
-		  <div>
-			<ul>
 
-				<li>
-					<button id="click-img1" class="cat"><img src="catpic.jpg"></button>	
-					<span class="outside-span">You have clicked the grey striped kitten, 
-						<span id="first_cat">Stripey
-						</span>, 
-						<span class="click-number" id="click-number1"> 0</span>
-					times!</span>
-				</li>
-				<li>
-					<button id="click-img2" class="cat"><img src="catpic2.jpg"></button>	
-					<span class="outside-span">You have clicked the shy cat, <span id="second_cat">Smeigal</span>,<span id="click-number2" class="click-number"> 0</span>times!</span>
-				</li>
+			<ul id="cat-list">
+				
 			</ul>
+		  	<div>
+		  		<button class="cat">Click me!</button>
 
-		</div>
+				<ul class="cat-image">
+					<li>
+						<p id="cat-name" class="name"></p>
+						<img id="cat-pic" src="{{}}">
+						<span id="cat-count">Likes: {{}}</span>
+					</li>
+				</ul>
+
+			</div>
 	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" src="app.js"></script>
 	</body>
 </html>
