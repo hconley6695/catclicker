@@ -38,7 +38,7 @@
 		},
 
 		getListCats: function() {
-			return data.cats;
+			return listOfCats.render();
 		},
 
 		setCurrentCat: function(cat) {
@@ -47,7 +47,7 @@
 
 		addClicks: function() {
 			data.firstCat.clickCt++;
-			catView.render();
+			singleCat.render();
 		}
 	}
 
@@ -84,16 +84,17 @@
 			this.render();
 		},
 		render: function() {
+
 			var cat, liElem, i;
 			var catList = octopus.getListCats();
 
-			this.listCats.innerHTML = '';
+			// this.listCats.innerHTML = '';
 
-			cats.forEach(function (cat) {
+			catList.forEach(function (cat) {
 				liElem = document.createElement('li');
 
 				liElem.textContent = cat.catName;
-
+				console.log(liElem);
 				liElem.addEventListener('click', function(animal) {
 					return function() {
 						octopus.setCurrentCat();
@@ -101,8 +102,9 @@
 					}
 				});
 
-				this.listCats.appendChild(liElem);
-			})
+				
+			});
+			return catList;
 		}
 	}
 
